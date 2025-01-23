@@ -1,76 +1,124 @@
 .project-details-container {
-    background-color: #121212;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  background-color: #121212; /* Black background for the page */
+  min-height: 100vh;
+  padding: 50px 20px; /* Added padding for spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-details-content {
+  background-color: #1e1e1e; /* Dark grey for card */
+  border-radius: 16px; /* Smoother edges */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow for emphasis */
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px; /* Wider container */
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-image-section {
+  flex: 1.2; /* Larger space for the image */
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 500px; /* Restrict height for large images */
+}
+
+.project-info-section {
+  flex: 1.8; /* Wider info section */
+  padding: 40px;
+  color: #ffffff; /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 40px; /* Larger title */
+  font-weight: bold;
+  color: #00aaff; /* Bright accent color */
+  margin-bottom: 20px;
+}
+
+.project-category {
+  font-size: 20px;
+  color: #bbbbbb; /* Subtle grey for category */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.project-description {
+  font-size: 18px; /* Larger text */
+  line-height: 1.8;
+  color: #dddddd;
+  margin-bottom: 40px;
+}
+
+/* Back Button Enhanced */
+.back-button {
+  align-self: flex-start;
+  background: linear-gradient(90deg, #00d4ff, #ff00e6); /* Gradient effect */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Space-like text effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 15px #00d4ff;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  background: linear-gradient(90deg, #ff00e6, #00d4ff);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 20px #ff00e6;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Project Not Found Message */
+.project-not-found {
+  font-size: 24px;
+  color: #ff4444;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .project-details-content {
+    flex-direction: column; /* Vertical layout on smaller screens */
   }
-  
-  .project-details {
-    background-color: #fff;
-    width: 80%;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  .project-image-section {
     padding: 20px;
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
   }
-  
-  .project-image {
-    flex: 1; 
-    padding-right: 20px; 
+
+  .project-info-section {
+    padding: 30px;
   }
-  
-  .project-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    max-width: 100%; 
-  }
-  
-  .project-info {
-    flex: 2; 
-  }
-  
-  .project-category {
-    font-size: 18px;
-    color: #888;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
+
   .project-title {
     font-size: 32px;
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 20px;
   }
-  
+
   .project-description {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-size: 16px;
   }
-  
-  @media (max-width: 768px) {
-    .project-details {
-      flex-direction: column; 
-      width: 90%;
-    }
-  
-    .project-title {
-      font-size: 28px;
-    }
-  
-    .project-description {
-      font-size: 16px;
-    }
+
+  .back-button {
+    font-size: 14px;
+    padding: 10px 20px;
   }
-  
+}
