@@ -10,14 +10,13 @@
 
 /* Title */
 .page-title {
-  font-size: 2.8rem; /* Normal font size */
+  font-size: 2.8rem; 
   margin-bottom: 20px;
   font-weight: bold;
-  color: #fff;
-  letter-spacing: 2px; /* Subtle space theme touch */
+  color: #ff6347; /* Set your desired color here */
+  letter-spacing: 2px; 
   text-transform: uppercase;
 }
-
 /* Page Description */
 .page-description {
   font-size: 1.2rem;
@@ -25,12 +24,64 @@
   margin-bottom: 40px;
 }
 
-/* Grid Layout */
+/* Project Rows */
+.projects-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.category-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #f0a500; /* Set your desired color here */
+  text-align: center; 
+  width: 100%; 
+}
+
+/* Left and Right Navigation Buttons */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.nav-arrow.left {
+  left: 10px;
+}
+
+.nav-arrow.right {
+  right: 10px;
+}
+
+/* Project Grid Inside Each Row */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Show 3 projects per row */
   gap: 30px;
-  margin-top: 20px;
+  flex: 1;
+  transition: transform 0.3s ease; /* Smooth scrolling effect */
   padding: 0 20px;
 }
 
@@ -44,6 +95,9 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
+  max-width: 350px; /* Medium card width */
+  width: 100%;
+  margin: 0 auto; /* Center the card */
 }
 
 .project-card:hover {
@@ -74,9 +128,10 @@
 }
 
 .project-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Adjust title size for narrower cards */
   color: #fff;
   margin: 0;
+  text-align: center; /* Ensure it aligns properly */
 }
 
 .project-description {
@@ -106,4 +161,49 @@
   background: linear-gradient(90deg, #ff00e6, #00d4ff);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 20px #ff00e6;
   transform: scale(1.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 projects per row on smaller screens */
+  }
+
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr); /* Show 1 project per row on very small screens */
+  }
+
+  .nav-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+/* Development Project Titles */
+.development-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ff6347; /* Set your desired color for Development Projects */
+  text-align: center;
+  width: 100%;
+}
+
+/* Design Project Titles */
+.design-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #32cd32; /* Set your desired color for Design Projects */
+  text-align: center;
+  width: 100%;
 }
