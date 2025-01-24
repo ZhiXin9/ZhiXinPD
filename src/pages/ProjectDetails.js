@@ -33,24 +33,24 @@ const ProjectDetails = () => {
       id: 2,
       title: 'Mobile App Quiz',
       category: 'Mobile App Development',
-      techUsed: ['WebStorm', 'Android Studio'],
+      techUsed: ['Android Studio'],
       yearPublished: 2024,
       colorScheme: 'Blue, White',
       description:
-        'Develop a mobile quiz app using WebStorm and Android Studio with intuitive design and analytics.',
-      detailedDescription:
-        `This mobile app was designed to allow users to take quizzes on various topics, with a user-friendly interface built using Android Studio.
-        The app stores quiz questions and tracks user progress with analytics features powered by Firebase. 
-        The project focused on creating a seamless user experience, where users could easily navigate through quizzes and view their results in real-time.
+        'Designed a mobile quiz app with intuitive navigation and seamless user experience.',
+      detailedDescription: 
+        `This mobile app was designed to allow users to take quizzes on various topics, featuring an intuitive interface created with Android Studio.
+        The app focused on providing a seamless experience, enabling users to navigate effortlessly through quizzes and view their results instantly.
         
-        One challenge in this project was integrating Firebase for user authentication and data storage, ensuring secure data handling.
-        Additionally, optimizing the app for smooth performance on various Android devices was crucial for a positive user experience.
-
-        **Skills Learned:** Mobile app development, Firebase integration, UI/UX design for mobile, analytics tracking.`,
+        A key objective of this project was ensuring smooth performance across various Android devices while maintaining a user-friendly design.
+        Special attention was given to optimizing navigation and delivering real-time results for an engaging and interactive user experience.
+    
+        **Skills Learned:** Mobile app development, UI/UX design for mobile, performance optimization.`,
       image: '/images/MobileAppQuiz.jpg',
       repoLink: 'https://github.com/ZhiXin9/C346_L3_Exercise',
       videoLink: 'https://youtu.be/efdHCyEUKX4',
     },
+    
     {
       "id": 3,
       "title": "Republic Polytechnic Web Portal",
@@ -123,8 +123,7 @@ const ProjectDetails = () => {
 
         **Skills Learned:** Branding, design consistency, responsive web design, visual storytelling.`,
       image: '/images/PortfolioDesign.jpg',
-      repoLink: 'https://github.com/username/Portfolio-Design',
-      videoLink: 'https://www.youtube.com/watch?v=videoID',
+
     },
     {
       "id": 7,
@@ -158,8 +157,6 @@ const ProjectDetails = () => {
 
         **Skills Learned:** AI-assisted design, character design, creative exploration with AI tools, digital art production.`,
       image: '/images/Avatars.jpg',
-      repoLink: 'https://github.com/username/Avatars-Design',
-      videoLink: 'https://www.youtube.com/watch?v=videoID',
     },
     
   ];
@@ -193,7 +190,7 @@ const ProjectDetails = () => {
               <div className="project-repository">
                 {project.repoLink && (
                   <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
-                    View Project
+                    View Resources
                   </a>
                 )}
               </div>
