@@ -20,18 +20,18 @@ const AllProjects = () => {
   const designProjects = [
     {
       id: 5,
-      title: 'BE-Leaf App UI Design',
+      title: 'BE-LEAF App UI Design',
       description: 'Using Figma to design a UI for the BE-Leaf app with recyclable identification, bin updates, and rewards.',
       image: 'images/BELEAF.png'
     },
     { id: 6, title: 'Portfolio Design', description: 'Using Adobe Illustrator to design namecards, stickers, and a portfolio website', image: '/images/PortfolioDesign.jpg' },
-    { id: 7, title: 'Avatars Design', description: 'Using AI generative tools and Adobe Illustrator to design avatars and styles', image: '/images/Avatars.jpg' },
     {
-      "id": 5,
+      "id": 7,
       "title": "ChillSphere Mobile UI Design",
       "description": "Using Figma to design a UI for ChillSphere, an all in one entertainment app",
       "image": "images/ChillSphereApp.png"
     },
+    { id: 8, title: 'Avatars Design', description: 'Using AI generative tools and Adobe Illustrator to design avatars and styles', image: '/images/Avatars.jpg' },
     
   ];
 
@@ -54,7 +54,7 @@ const AllProjects = () => {
     <div className="all-projects-container">
       <h1 className="page-title">All Projects</h1>
       <p className="page-description">
-        Explore a collection of diverse projects showcasing skills in development and design.
+        Explore a collection of diverse projects showcasing my skills in development and design.
       </p>
 
       {/* Development Projects */}

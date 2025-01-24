@@ -18,7 +18,7 @@ const ProjectDetails = () => {
       description:
         'Create an immersive virtual escape room using Unity, featuring interactive puzzles and a rich storyline.',
       detailedDescription:
-        `In this project, I developed a fully immersive VR escape room game using Unity and C#. 
+        `In this project, I developed a fully immersive VR escape room game using Unity. 
         The game was designed to offer an engaging experience, where players could solve various puzzles and interact with the virtual environment. 
         I integrated a VR SDK to enhance the player's interaction with the virtual world, adding an extra layer of realism.
         
@@ -34,7 +34,7 @@ const ProjectDetails = () => {
       title: 'Mobile App Quiz',
       category: 'Mobile App Development',
       techUsed: ['WebStorm', 'Android Studio'],
-      yearPublished: 2022,
+      yearPublished: 2024,
       colorScheme: 'Blue, White',
       description:
         'Develop a mobile quiz app using WebStorm and Android Studio with intuitive design and analytics.',
@@ -70,7 +70,7 @@ const ProjectDetails = () => {
       "title": "Disney Movies Mobile App",
       "category": "Mobile App Development",
       "techUsed": ["WebStorm", "Android Studio"],
-      "yearPublished": 2023,
+      "yearPublished": 2025,
       "colorScheme": "Red, Yellow, Blue",
       "description": "Develop a mobile app listing Disney movies with search and filter functionality using WebStorm and Android Studio.",
       "detailedDescription":
@@ -86,10 +86,10 @@ const ProjectDetails = () => {
     
     { 
       id: 5,
-      title: 'BE-Leaf App UI Design',
+      title: 'BE-LEAF App UI Design',
       category: 'UI/UX Design',
       techUsed: ['Figma', 'AI Tools'],
-      yearPublished: 2025,
+      yearPublished: 2024,
       colorScheme: 'Green, Earth Tones',
       description:
         'Design the user interface for an app that helps users identify recyclables, provides bin capacity updates, and rewards them for recycling efforts.',
@@ -109,8 +109,8 @@ const ProjectDetails = () => {
       title: 'Portfolio Design',
       category: 'Graphic Design',
       techUsed: ['Adobe Illustrator', 'Photoshop'],
-      yearPublished: 2021,
-      colorScheme: 'Black, Gold',
+      yearPublished: 2024,
+      colorScheme: 'Black, Green',
       description:
         'Design a portfolio using Adobe Illustrator with modern aesthetics for namecards, stickers, and a web presence.',
       detailedDescription:
@@ -127,12 +127,26 @@ const ProjectDetails = () => {
       videoLink: 'https://www.youtube.com/watch?v=videoID',
     },
     {
-      id: 7,
+      "id": 7,
+      "title": "ChillSphere Mobile UI Design",
+      "category": "UI/UX Design",
+      "techUsed": ["Figma"],
+      "yearPublished": 2024,
+      "colorScheme": "Blue, Monochrome",
+      "description": "Design the user interface for ChillSphere, an entertainment app that lets users watch movies, listen to music, and play mini-games and quizzes.",
+      "detailedDescription":
+        "For the ChillSphere mobile UI design, I created a user-friendly and engaging experience using Figma. The app offers a variety of entertainment options, including movie streaming, music listening, and interactive mini-games and quizzes. I focused on wireframes and prototypes to ensure a seamless user flow with easy access to each feature. **Challenges:** Designing a versatile app with multiple entertainment features while keeping the interface clean and easy to navigate. Ensuring smooth transitions between media types and maintaining a consistent design across all app sections. **Skills Learned:** Figma design, entertainment app UI/UX, user-centered design, responsive design.",
+      "image": "/images/ChillSphereApp.png",
+      "repoLink": "https://www.figma.com/design/5jNZWnA36k2VB3kk33cuez/ChillSphere-6-Hi-fi-wireframe?node-id=0-1&t=ZFxxLrUN8rSprWmD-1",
+      "videoLink": "https://youtube.com/shorts/YEKkl7zcUoI?feature=share"
+    },
+    {
+      id: 8,
       title: 'Avatars Design',
       category: 'Graphic Design',
       techUsed: ['Adobe Illustrator', 'AI Tools'],
-      yearPublished: 2022,
-      colorScheme: 'Pastel',
+      yearPublished: 2024,
+      colorScheme: 'Pink, Blue',
       description:
         'Create unique avatars and character designs using AI generative tools and Adobe Illustrator.',
       detailedDescription:
@@ -147,20 +161,6 @@ const ProjectDetails = () => {
       repoLink: 'https://github.com/username/Avatars-Design',
       videoLink: 'https://www.youtube.com/watch?v=videoID',
     },
-    {
-      "id": 8,
-      "title": "ChillSphere Mobile UI Design",
-      "category": "UI/UX Design",
-      "techUsed": ["Figma"],
-      "yearPublished": 2025,
-      "colorScheme": "Cool Tones, Soft Neutrals",
-      "description": "Design the user interface for ChillSphere, an entertainment app that lets users watch movies, listen to music, and play mini-games and quizzes.",
-      "detailedDescription":
-        "For the ChillSphere mobile UI design, I created a user-friendly and engaging experience using Figma. The app offers a variety of entertainment options, including movie streaming, music listening, and interactive mini-games and quizzes. I focused on wireframes and prototypes to ensure a seamless user flow with easy access to each feature. **Challenges:** Designing a versatile app with multiple entertainment features while keeping the interface clean and easy to navigate. Ensuring smooth transitions between media types and maintaining a consistent design across all app sections. **Skills Learned:** Figma design, entertainment app UI/UX, user-centered design, responsive design.",
-      "image": "images/ChillSphereApp.png",
-      "repoLink": "https://www.figma.com/design/5jNZWnA36k2VB3kk33cuez/ChillSphere-6-Hi-fi-wireframe?node-id=0-1&t=ZFxxLrUN8rSprWmD-1",
-      "videoLink": "https://youtube.com/shorts/YEKkl7zcUoI?feature=share"
-    }
     
   ];
 

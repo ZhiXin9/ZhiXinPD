@@ -1,5 +1,4 @@
 /* General styles */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -98,11 +97,39 @@ footer {
   background-attachment: fixed;
 }
 
-
+/* Use flexbox to split the text and image */
 .banner-content {
   z-index: 10; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
+.banner-content .text {
+  flex: 1;
+  text-align: left; /* Align text to the left */
+}
+
+.banner-content .image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Round image styles */
+.round-image {
+  width: 250px;  /* Increased size */
+  height: 250px; /* Increased size */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff; /* Optional: Add border to make it stand out */
+}
+
+/* Banner heading styles */
 .banner-content h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -114,7 +141,6 @@ footer {
   margin-top: 20px;
 }
 
-/* About Section Styles */
 #about {
   padding: 60px 20px;
   display: flex;
@@ -148,7 +174,6 @@ footer {
   border-radius: 2px;
 }
 
-/* Style for the right skillset section */
 #about .skill-set {
   display: flex;
   flex-wrap: wrap;
@@ -166,8 +191,6 @@ footer {
   border: 1px solid #ddd;
 }
 
-
-/* General Layout */
 .portfolio-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -208,7 +231,7 @@ footer {
 
 .tab-item.active {
   font-weight: bold;
-  color: #ff5733; /* Active tab color */
+  color: #ff5733;
   background-color: #333;
 }
 
@@ -225,11 +248,8 @@ footer {
   border-radius: 10px;
 }
 
-.card-body
-
-/* Contact Section */
 .contact-section {
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -237,7 +257,7 @@ footer {
 
 .section-title {
   font-size: 2.5rem;
-  color: #f0a500; /* Gold color for title */
+  color: #f0a500;
 }
 
 .section-subtitle {
@@ -246,7 +266,6 @@ footer {
   margin-bottom: 2rem;
 }
 
-/* Contact Info */
 .contact-info {
   margin-bottom: 3rem;
 }
@@ -294,30 +313,26 @@ footer {
   }
 }
 
-
-/* Footer Styles */
 .footer {
-  background-color: #111; /* Dark background to match the theme */
-  color: #fff; /* White text */
-  padding: 20px 0; /* Add vertical padding */
-  text-align: center; /* Center the text */
-  font-size: 1rem; /* Adjust font size */
-  position: relative; /* Make sure the footer stays at the bottom */
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 20px; /* Add some space from other content */
+  margin-top: 20px;
 }
 
-/* Hover effect on footer text */
 .footer p {
   transition: color 0.3s ease;
 }
 
 .footer p:hover {
-  color: #f0a500; /* Add a color transition effect when hovering */
+  color: #f0a500;
 }
 
-/* Project Page Styles */
 .project-page {
   padding: 50px 0;
   background-color: #f9f9f9;
@@ -376,10 +391,9 @@ footer {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .project-page .go-back-button a:hover {
   background-color: #0056b3;
 }
-
-/* Add to App.css or your component-specific CSS file */

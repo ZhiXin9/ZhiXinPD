@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 
 const projects = [
   {
+    title: "BE-LEAF App",
+    description: "Using Figma to design a UI for the BE-Leaf app with recyclable identification, bin updates, and rewards.",
+    img: `${process.env.PUBLIC_URL}/images/BELEAF.png`,
+  },
+  {
     title: "VR Escape Room",
     description: "Using Unity to create a virtual escape room",
     img: `${process.env.PUBLIC_URL}/images/EscapeRoom.png`,
@@ -16,11 +21,6 @@ const projects = [
     description: "Using Adobe Illustrator to design namecard, stickers, and portfolio website",
     img: `${process.env.PUBLIC_URL}/images/PortfolioDesign.jpg`,
   },
-  {
-    title: "Avatars Design",
-    description: "Using AI generative tools and Adobe Illustrator to design Avatars and styles",
-    img: `${process.env.PUBLIC_URL}/images/Avatars.jpg`,
-  }
 ];
 
 
